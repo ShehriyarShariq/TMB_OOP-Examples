@@ -1,29 +1,21 @@
-// public class Main {
-//     public static void main(String args[]) {
-//         System.out.println("hello world");
-//         System.out.println(myMethod(4));
-//         System.out.println(myMethod(5));
-
-//     }
-
-//     public static int myMethod(int num) {
-//         return 9 - num;
-//     }
-
-// }
-
 public class Animal {
     public static void main(String args[]) {
         Dog animal1 = new Dog();
         Cat animal2 = new Cat();
         Duck animal3 = new Duck();
+
+        Animal cat = new Cat();
+        Animal dog = new Dog();
+        Animal duck = new Duck();
+
         animal1.Bark();
         animal2.Meow();
         animal3.Quack();
-
-        animal1.sayHello();
-        animal2.sayHello();
-        animal3.sayHello();
+        System.out.println("Polymorphism:");
+        dog.Greet();
+        cat.Greet();
+        duck.Greet();
+        System.out.println("Inheritance:");
 
         animal1.Greet();
         animal2.Greet();
